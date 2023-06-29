@@ -1,6 +1,6 @@
 import './globals.css'
-import Script from 'next/script'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 export const metadata = {
 	title: 'Daniel Calderon - Portfolio',
@@ -12,8 +12,8 @@ export default function RootLayout({children}) {
 		<html lang='es'>
 			<body>
 				<Header />
-				<main>{children}</main>
-        <Script src='./script/script-menu.js' strategy='afterInteractive'/>
+				<section>{children}</section>
+				<Footer />
 			</body>
 		</html>
 	)
