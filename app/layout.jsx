@@ -1,17 +1,20 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Script from 'next/script'
+import Header from './components/Header'
 
 export const metadata = {
-  title: 'Daniel Calderon - Portfolio',
-  description: 'Portfolio de Daniel Calderon, Creado con Next.js app',
+	title: 'Daniel Calderon - Portfolio',
+	description: 'Portfolio de Daniel Calderon, Creado con Next.js app',
 }
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="es">
-      <body className={inter.className}>{children}</body>
-    </html>
-  )
+export default function RootLayout({children}) {
+	return (
+		<html lang='es'>
+			<body>
+				<Header />
+				<main>{children}</main>
+        <Script src='./script/script-menu.js' strategy='afterInteractive'/>
+			</body>
+		</html>
+	)
 }
