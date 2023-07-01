@@ -1,5 +1,5 @@
 .header {
-    position: sticky;
+	position: sticky;
 	left: 0;
 	top: 0;
 	z-index: 999;
@@ -15,14 +15,38 @@
 	align-items: center;
 }
 
-.logo a {
-	color: var(--first-color);
-	font-weight: bold;
-	font-size: 2rem;
-	text-decoration: none;
+.logo img {
+	width: 64px;
+	margin-right: 10px;
 }
 
 /* ********** Menu ********** */
+.desktop-menu {
+	display: none;
+}
+
+.mobile-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: yellow;
+	padding: 20px;
+}
+
+.hamburger-icon {
+	display: block;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.line {
+	display: block;
+	width: 25px;
+	height: 2px;
+	background-color: black;
+	margin: 5px;
+}
 .menu {
 	position: static;
 	left: 0;
@@ -36,12 +60,15 @@
 	transition: opacity 0.5s ease;
 }
 
-.menu.is-active {
-	opacity: 1;
-	pointer-events: auto;
+.menu ul {
+	list-style: none;
+	display: flex;
 }
 
-.menu a {
+.menu li {
+	margin-left: 10px;
+}
+.menu .a {
 	padding: 0 1rem;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -50,7 +77,87 @@
 	color: var(--first-color);
 }
 
-.menu a:hover {
+.menu .a:hover {
 	color: var(--gray-dark-color);
-    background-color: transparent;
+	background-color: transparent;
+}
+
+
+.menu-items {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .menu-items li {
+	margin-left: 10px;
+  }
+  
+  .hamburger-icon {
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .line {
+	display: block;
+	width: 25px;
+	height: 2px;
+	background-color: black;
+	margin: 5px;
+  }
+
+@media (max-width: 768px) {
+	.header {
+		display: flex;
+		justify-content: center;
+		background-color: yellow;
+		padding: 10px;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.menu {
+		justify-content: center;
+		margin-top: 10px;
+	}
+
+	.menu ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		list-style: none;
+	}
+
+	.menu li {
+		margin: 5px 0;
+	}
+
+	.menu.mobile {
+		align-items: center;
+		height: 100vh;
+		padding-top: 40vh; /* Ajusta el valor según sea necesario */
+	}
+
+	.menu-items {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: yellow;
+		padding: 20px;
+	  }
+	
+	  .menu-items.show {
+		display: flex;
+		flex-direction: column;
+	  }
+	
+	  .hamburger-icon {
+		display: block;
+	  }
 }
