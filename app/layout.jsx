@@ -1,5 +1,4 @@
 "use client"
-import { useClient } from 'next/client';
 import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'

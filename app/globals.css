@@ -1,13 +1,14 @@
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:regular,italic,700,700italic);
 /* ********** Custom Properties ********** */
 :root {
-  --first-color: #0000ff;
-  --first-alpha-color: rgba(0, 0, 255, 0.75);
+  --first-color: #2196f3;
+  --first-alpha-color: rgba(33, 150, 243, 0.75);
   --second-color: #ffff00;
-  --second-alpha-color: rgba(255, 255, 0, 0.75);
+  --second-alpha-color: rgb(255, 255, 129, 0.75);
 
-  --third-color: #501464;
-  --third-alpha-color: rgba(80, 20, 100, 0.75);
+  --third-color: rgb(107, 190, 249);
+  --third-alpha-color: rgba(107, 190, 249, 0.75);
   --white-color: #fff;
   --gray-light-color: #f3f3f3;
   --gray-color: #ccc;
@@ -18,7 +19,8 @@
   --text-color: #222;
   --white-alpha-color: rgba(255, 255, 255, 0.5);
   --black-alpha-color: rgba(0, 0, 0, 0.5);
-  --font: "Raleway", sans-serif;
+  --font: "Raleway",sans-serif;
+  --font-text:'Ubuntu Mono'
   --max-width: 1200px;
   --header-height: 4rem;
 }
@@ -56,11 +58,12 @@ body {
 
 a {
   color: var(--link-color);
+  text-decoration: none;
   transition: all 0.5s ease-out;
 }
 
 a:hover {
-  opacity: 0.75;
+  opacity: 0.65;
 }
 
 h1 {
@@ -100,4 +103,12 @@ img {
 
 p {
   line-height: 1.6;
+}
+
+/*$ ******************************/
+/*$ *******  Utilitarios  ********/
+/*$ ******************************/
+
+.box-shadow-1 {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
 }

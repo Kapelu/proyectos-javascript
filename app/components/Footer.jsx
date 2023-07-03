@@ -1,9 +1,11 @@
+import '../components/footer.css'
+
 export default function Footer() {
 	return (
-		<footer class='footer'>
+		<footer className='footer'>
 			<small>
 				Sitio diseñado y desarrollado por &nbsp;
-				<a
+				<a className='link'
 					href='https://github.com/Kapelu'
 					target='_blank'
 					rel='noopener'

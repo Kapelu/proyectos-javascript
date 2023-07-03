@@ -1,5 +1,6 @@
 /* import Image from 'next/image' */
-/* import styles from './page.module.css' */
+
+import './page.module.css'
 
 export default function Home() {
 	return (
@@ -16,7 +17,7 @@ export default function Home() {
 			<section id='portafolio' className=''>
         <h2>Portafolio</h2>
       </section>
-			<section id='testimonios' class=''>
+			<section id='testimonios' className=''>
         <h2>Testimonios</h2>
       </section>
 			<section id='contacto' className=''>
