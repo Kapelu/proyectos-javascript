@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
-import '../components/header.css'
+/* import '../components/header.css' */
 import '../globals.css'
 import '../components/hamburguer.css'
 
@@ -9,11 +9,11 @@ export default function Header() {
 	const [isMobile, setIsMobile] = useState(false)
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-	/* const toggleMenu = () => {
+	/* 	const toggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen)
 	} */
 
-	useEffect(() => {
+/* 	useEffect(() => {
 		const handleResize = () => {
 			setIsMobile(window.innerWidth <= 768)
 		}
@@ -22,7 +22,7 @@ export default function Header() {
 		return () => {
 			window.removeEventListener('resize', handleResize)
 		}
-	}, [])
+	}, []) */
 
 	/* const item = {
 		inicio: {name: 'Inicio', link: '#'},
@@ -34,8 +34,9 @@ export default function Header() {
 	} */
 
 	return (
+		<>
 		<header className='header'>
-			<section className='container'>
+			<section className='contenedor'>
 				<div className='logo'>
 					<Link
 						href='https://github.com/Kapelu'
@@ -66,19 +67,20 @@ export default function Header() {
 						xmlns='http://www.w3.org/2000/svg'
 						width='24'
 						height='24'
-						viewBox='0 0 24 24'
+						viewBox='0 0 14 10'
 					>
-						<path d='M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z' />
+						<path d='M5 1 1 5l4 4m6-8L7 5l4 4' />
 					</svg>
 				</button>
-				<nav className='menu'> {/* ${isMenuOpen ? 'none' : ''} */}
-					<Link href='#inicio'>Inicio</Link>
+				<nav className={`menu ${isMenuOpen ? 'menu-btn' : 'none'}`}>
+					<Link href='#'>Inicio</Link>
 					<Link href='#acerca'>Acerca</Link>
 					<Link href='#servicios'>Servicios</Link>
 					<Link href='#portafolio'>Portafolio</Link>
 					<Link href='#testimonios'>Testimonios</Link>
 					<Link href='#Contacto'>Contacto</Link>
-					{/* <ul
+				</nav>
+				{/* <ul
 						
 					>
 						{Object.keys(item).map((key) => (
@@ -89,9 +91,9 @@ export default function Header() {
 							</li>
 						))}
 					</ul> */}
-				</nav>
 			</section>
 		</header>
+		</>
 	)
 }
 

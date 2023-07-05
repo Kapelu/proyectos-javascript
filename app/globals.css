@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:regular,italic,700,700italic);
+/* @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:regular,italic,700,700italic); */
 /* ********** Custom Properties ********** */
 :root {
   --first-color: #2196f3;
@@ -59,7 +59,7 @@ body {
 a {
   color: var(--link-color);
   text-decoration: none;
-  transition: all 0.5s ease-out;
+  transition: all 0.75s ease-out;
 }
 
 a:hover {
@@ -111,4 +111,31 @@ p {
 
 .box-shadow-1 {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.contenedor{
+  margin-left: auto;
+  margin-right: auto;
+  min-width: var(--max-width);
+}
+
+/*$ *********************************** */
+/*$ *******  Estilos del Sitio  ******* */
+/*$ *********************************** */
+
+.header {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  padding: 1rem;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--second-color);
+}
+
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
