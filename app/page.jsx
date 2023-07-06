@@ -1,14 +1,15 @@
 /* import Image from 'next/image' */
+import Inicio from './components/Inicio'
 
 import './page.module.css'
 
 export default function Home() {
 	return (
 		<>
-			<section id='inicio' className=''>
-        <h2>Inicio</h2>
+			<section id='inicio'>
+        <Inicio />
       </section>
-			<section id='acerca' className=''>
+			<section id='acerca'>
         <h2>Acerca</h2>
       </section>
 			<section id='servicios' className=''>

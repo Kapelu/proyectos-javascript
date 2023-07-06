@@ -16,7 +16,7 @@ export default function Header() {
 						rel='noopener'
 					>
 						<img
-							src='./assets/logo-kapelu.png'
+							src='./assets/icon/logo-kapelu.png'
 							width='64'
 							alt='Calderon Daniel'
 						/>
