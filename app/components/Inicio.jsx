@@ -4,22 +4,25 @@ import '../globals.css'
 import './inicio.css'
 
 export default function Inicio() {
+	const styleInLine = ()=>{
+		const imagen ={
+			imagen: url('assets/hero-image-home.png')
+			/* hero-attachment: fixed */
+		}
+	
 	return (
-		<section className='home'>
-			{/* <article
+		<article
 				className='hero-image'
-				style={{--hero-image: url('assets/hero-image-home.png');
-            --hero-attachment: fixed}}
-        
+				style={imagen}
 			>
 				<aside
 					className='hero-image-opacity'
-					style='--hero-opacity-color: var(--black-alpha-color)'
+					/* style='--hero-opacity-color: var(--black-alpha-color)' */
 				>
 					<div className='hero-image-content'>
 						<h2
 							className='hero-image-title'
-							style='--hero-text-color: var(--white-color)'
+							/* style='--hero-text-color: var(--white-color)' */
 						>
 							Bienvenid@s
 							<br />a mi sitio
@@ -29,7 +32,6 @@ export default function Inicio() {
 						</a>
 					</div>
 				</aside>
-			</article> */}
-		</section>
-	)
+			</article>
+	)}
 }

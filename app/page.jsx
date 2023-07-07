@@ -6,7 +6,7 @@ import './page.module.css'
 export default function Home() {
 	return (
 		<>
-			<section id='inicio'>
+			<section id='inicio' className='home'>
         <Inicio />
       </section>
 			<section id='acerca'>

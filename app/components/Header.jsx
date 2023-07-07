@@ -1,10 +1,22 @@
-import React, {useState, useClient} from 'react'
+import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
 import '../globals.css'
 import './header.css'
 
 export default function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+	useEffect(() => {
+		const handleClickOutsideMenu = (event) => {
+			console.log('Click outside menu')
+			if (!event.target.matches('.menu-item')) return false
+				const $btnMenu = document.querySelector('.menu-btn')
+				$btnMenu.firstElementChild.classList.remove('menu-none')
+				$btnMenu.lastElementChild.classList.add('menu-none')
+				setIsMenuOpen(false)
+		}
+		document.addEventListener('click', handleClickOutsideMenu)
+	}, [])
 
 	const item = {
 		inicio: {name: 'Inicio', link: '#'},
