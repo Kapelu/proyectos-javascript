@@ -8,7 +8,6 @@ export default function Header() {
 
 	useEffect(() => {
 		const handleClickOutsideMenu = (event) => {
-			console.log('Click outside menu')
 			if (!event.target.matches('.menu-item')) return false
 				const $btnMenu = document.querySelector('.menu-btn')
 				$btnMenu.firstElementChild.classList.remove('menu-none')
