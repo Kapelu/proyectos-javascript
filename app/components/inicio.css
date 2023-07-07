@@ -1,9 +1,7 @@
 .hero-image {
-	background-image: var(--hero-image);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-attachment: var(--hero-attachment);
 }
 
 .hero-image-opacity {
