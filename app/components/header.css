@@ -1,8 +1,29 @@
+.header {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 999;
+	padding: 1rem;
+	width: 100%;
+	height: var(--header-height);
+	background-color: var(--second-color);
+}
+
+.header > .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .menu-btn {
 	outline: thin solid var(--first-color);
 	border: 0;
 	cursor: pointer;
 	background-color: var(--second-color);
+}
+
+.menu-none {
+	display: none;
 }
 
 .menu-btn svg {
@@ -42,6 +63,13 @@
 }
 
 @media screen and (min-width: 1024px) {
+	.header {
+		position: sticky;
+		top: 0;
+		padding: 0.5rem;
+		height: calc(var(--header-height) - 0.5rem);
+	}
+
 	.menu-btn {
 		display: none;
 	}
@@ -55,7 +83,7 @@
 	}
 
 	.menu a {
-		padding: 0 .5rem;
+		padding: 0 0.5rem;
 	}
 
 	.menu a:last-child {

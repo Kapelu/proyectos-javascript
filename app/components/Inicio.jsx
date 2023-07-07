@@ -19,9 +19,10 @@ export default function Inicio() {
 					</div>
 					<div>
 						<Image
-							src='/assets/perfil.png'
+						className='foto-perfil'
+							src='/assets/keiko.png'
 							alt='Picture of the author'
-							width={800}
+							width={600}
 							height={500}
 							quality={100}
 							priority={true}

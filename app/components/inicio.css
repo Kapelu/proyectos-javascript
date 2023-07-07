@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:regular,italic,700,700italic);
+
 .hero-image {
 	background-image: url('/assets/hero-image-home.png');
 	background-repeat: no-repeat;
@@ -12,11 +14,28 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-align: center;/* 
-	background-color: var(--black-alpha-color); */
+	text-align: center;
 }
 
 .hero-image-title {
-	font-size: 7.5vw;
+	font-family:'Ubuntu Mono', sans-serif;
+	font-style: italic;
+	font-size: 11vw;
 	color: var(--white-color);
+}
+
+
+.foto-perfil {
+	width: 250px;
+	border-radius: 45%;
+}
+
+@media screen and (min-width: 1024px) {
+	.foto-perfil {
+		width: 600px;
+	}
+
+	.hero-image-title {
+		font-size: 6.5vw;
+	}
 }

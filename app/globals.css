@@ -1,11 +1,8 @@
-/* @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-*/
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:regular,italic,700,700italic); 
 /* ********** Custom Properties ********** */
 :root {
   --first-color: #2196f3;
   --first-alpha-color: rgba(33, 150, 243, 0.75);
-  --second-color: #ffff00;
+  --second-color: #ffee00;
   --second-alpha-color: rgb(255, 255, 129, 0.75);
 
   --third-color: rgb(107, 190, 249);
@@ -55,6 +52,8 @@ body {
   margin: 0;
   overflow-x: hidden;
   color: var(--text-color);
+
+  background-color: var(--gray-color);
 }
 
 a {
@@ -110,10 +109,6 @@ p {
 /*$ *******  Utilitarios  ********/
 /*$ ******************************/
 
-.box-shadow-1 {
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
-}
-
 .btn {
   border-radius: 0.5rem;
   padding: 1rem;
@@ -124,10 +119,6 @@ p {
   text-decoration: none;
   color: var(--white-color);
   background-color: var(--first-color);
-}
-
-.menu-none {
-  display: none;
 }
 
 
@@ -142,39 +133,11 @@ p {
 /*$ *******  Estilos del Sitio  ******* */
 /*$ *********************************** */
 
-.header {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: 999;
-  padding: 1rem;
-  width: 100%;
-  height: var(--header-height);
-  background-color: var(--second-color);
-}
 
-.header > .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} 
 
 @media screen and (min-width: 768px) {}
 
-@media screen and (min-width: 1024px) {
-  
-  .footer {
-    margin-bottom: 0;
-  }
-
-  .header {
-    position: sticky;
-    top: 0;
-    padding: 0.5rem;
-    height: calc(var(--header-height) - 0.5rem);
-  }
-
-}
+@media screen and (min-width: 1024px) {}
 
 /*$ ***************************** */
 /*$ *******  Componentes  ******* */

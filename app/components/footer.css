@@ -5,9 +5,15 @@
 	color: var(--white-color);
 	background-color: var(--gray-dark-color);
 }
-.link{
-    color:#ffee00;
-    font-family: var(--font-text);
-    font-weight: 600;
-    font-style: italic;
+.link {
+	color: #ffee00;
+	font-family: var(--font-text);
+	font-weight: 600;
+	font-style: italic;
+}
+
+@media screen and (min-width: 1024px) {
+	.footer {
+		margin-bottom: 0;
+	}
 }

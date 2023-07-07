@@ -1,5 +1,6 @@
 /* import Image from 'next/image' */
 import Inicio from './components/Inicio'
+import Acerca from './components/Acerca'
 
 import './page.module.css'
 
@@ -9,8 +10,8 @@ export default function Home() {
 			<section id='inicio' className='home'>
         <Inicio />
       </section>
-			<section id='acerca'>
-        <h2>Acerca</h2>
+			<section id="acerca" className="about section container full-lg-screen">
+        <Acerca />
       </section>
 			<section id='servicios' className=''>
         <h2>Servicios</h2>
