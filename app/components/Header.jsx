@@ -1,10 +1,19 @@
-import React, {useState} from 'react'
+import React, {useState, useClient} from 'react'
 import Link from 'next/link'
 import '../globals.css'
 import './header.css'
 
 export default function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+	const item = {
+		inicio: {name: 'Inicio', link: '#'},
+		acerca: {name: 'Acerca', link: '#acerca'},
+		servicios: {name: 'Servicios', link: '#servicios'},
+		portafolio: {name: 'Portafolio', link: '#portafolio'},
+		testimonio: {name: 'Testimonios', link: '#testimonios'},
+		contacto: {name: 'Contacto', link: '#contacto'},
+	}
 
 	return (
 		<header className='header'>
@@ -23,7 +32,9 @@ export default function Header() {
 					</Link>
 				</div>
 				<button
-					className={`menu-btn ${isMenuOpen ? 'menu-hamburguer' : ''}`}
+					className={`menu-btn ${
+						isMenuOpen ? 'menu-hamburguer' : ''
+					}`}
 					onClick={() => {
 						const $btnMenu = document.querySelector('.menu-btn')
 
@@ -43,7 +54,7 @@ export default function Header() {
 						<path d='M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z' />
 					</svg>
 					<svg
-						class='menu-none'
+						className='menu-none'
 						xmlns='http://www.w3.org/2000/svg'
 						width='24'
 						height='24'
@@ -52,13 +63,13 @@ export default function Header() {
 						<path d='M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z' />
 					</svg>
 				</button>
+
 				<nav className={`menu ${isMenuOpen ? 'is-active' : ''}`}>
-					<Link href='#'>Inicio</Link>
-					<Link href='#acerca'>Acerca</Link>
-					<Link href='#servicios'>Servicios</Link>
-					<Link href='#portafolio'>Portafolio</Link>
-					<Link href='#testimonios'>Testimonios</Link>
-					<Link href='#Contacto'>Contacto</Link>
+					{Object.keys(item).map((key) => (
+						<Link href={item[key].link} key={key} passHref>
+							<span className='menu-item'>{item[key].name}</span>
+						</Link>
+					))}
 				</nav>
 			</section>
 		</header>
