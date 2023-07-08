@@ -7,12 +7,6 @@
 	color: #9067ffd2;
 }
 
-/* .avatar {
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-} */
-
 .bg-gray-light {
 	background-color: var(--gray-light-color);
 }
@@ -36,8 +30,9 @@
 .container {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: var(--max-width);
+	min-width: var(--max-width);
 }
+
 .gray-scale {
 	filter: grayscale(1);
 }
@@ -77,6 +72,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+	.avatar {
+		border-radius: 50%;
+		width: 850px;
+		height: 500px;
+	}
 	.about {
 		display: grid;
 		grid-template-columns: repeat(3, 30%);

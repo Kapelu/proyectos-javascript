@@ -2,7 +2,8 @@
 import Inicio from './components/Inicio'
 import Acerca from './components/Acerca'
 
-import './page.module.css'
+/* import './page.module.css' */
+import './globals.css'
 
 export default function Home() {
 	return (
@@ -10,7 +11,7 @@ export default function Home() {
 			<section id='inicio' className='home'>
         <Inicio />
       </section>
-			<section id="acerca" className="about section container full-lg-screen">
+			<section id="acerca" className="container about section  full-lg-screen">
         <Acerca />
       </section>
 			<section id='servicios' className=''>

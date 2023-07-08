@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './acerca.css'
 
 export default function Acerca() {
@@ -32,19 +33,21 @@ export default function Acerca() {
 					alcanzar los objetivos de la empresa.
 				</p>
 				<div className='text-center text-lg-left'>
-					<a
+
+				<Link
 						className='btn'
 						href='https://drive.google.com/file/d/19qdgxbpHagDmuI5Ssk8ybSDLXp9xy6bF/view?usp=share_link'
 						target='_blank'
 						rel='noopener'
 					>
 						DESCARGA MI CV
-					</a>
+					</Link>
 				</div>
 			</article>
 			<article>
 				<img
-					className='gray-scale'
+					className='avatar gray-scale'
+					width='850px'
 					src='./assets/perfil.png'
 					alt='Daniel Calderon'
 				/>

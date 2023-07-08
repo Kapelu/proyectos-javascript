@@ -7,18 +7,23 @@
 
   --third-color: rgb(107, 190, 249);
   --third-alpha-color: rgba(107, 190, 249, 0.75);
+
   --white-color: #fff;
-  --gray-light-color: #f3f3f3;
+  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  
   --gray-color: #ccc;
+  --gray-light-color: #f3f3f3;
   --gray-dark-color: #666;
+  
   --black-color: #000;
+  --black-alpha-color: rgba(0, 0, 0, 0.4);
+  
   --link-color: #509ee3;
   --title-color: #333;
   --text-color: #222;
-  --white-alpha-color: rgba(255, 255, 255, 0.5);
-  --black-alpha-color: rgba(0, 0, 0, 0.4);
   --font: "Raleway",sans-serif;
   --font-text:'Ubuntu Mono'
+  
   --max-width: 1200px;
   --header-height: 4rem;
 }
@@ -121,27 +126,12 @@ p {
   background-color: var(--first-color);
 }
 
-
 .container{
   margin-left: auto;
   margin-right: auto;
-  min-width: var(--max-width);
+  min-width: 1200px;
 }
-
-
-/*$ *********************************** */
-/*$ *******  Estilos del Sitio  ******* */
-/*$ *********************************** */
-
-
 
 @media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 1024px) {}
-
-/*$ ***************************** */
-/*$ *******  Componentes  ******* */
-/*$ ***************************** */
-/*& **********************    COMPLETADO     */
-/*& *******  Menú  *******    COMPLETADO     */
-/*& **********************    COMPLETADO     */

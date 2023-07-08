@@ -1,17 +1,18 @@
 import '../components/footer.css'
+import Link from 'next/link'
 
 export default function Footer() {
 	return (
 		<footer className='footer'>
 			<small>
 				Sitio diseñado y desarrollado por &nbsp;
-				<a className='link'
+				<Link className='link'
 					href='https://github.com/Kapelu'
 					target='_blank'
 					rel='noopener'
 				>
 					@Daniel Calderon
-				</a>
+				</Link>
 			</small>
 		</footer>
 	)
