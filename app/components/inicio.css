@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:regular,italic,700,700italic);
+/* @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:regular,italic,700,700italic); */
 
 .hero-image {
 	background-image: url('/assets/hero-image-home.png');
@@ -18,7 +18,7 @@
 }
 
 .hero-image-title {
-	font-family:'Ubuntu Mono', sans-serif;
+	font-family:var();
 	font-style: italic;
 	font-size: 11vw;
 	color: var(--white-color);

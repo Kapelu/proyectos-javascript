@@ -40,7 +40,7 @@
 	background-color: var(--second-color);
 	opacity: 0;
 	pointer-events: none;
-	transition: opacity 0.5s ease;
+	transition: opacity 0.2s ease;
 }
 
 .menu.is-active {
@@ -59,7 +59,7 @@
 
 .menu a:hover {
 	color: var(--text-color);
-	background-color: var(--first-color);
+	background-color: #cec94de1/* var(--second-alpha-color) */;
 }
 
 @media screen and (min-width: 1024px) {

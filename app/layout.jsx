@@ -1,4 +1,5 @@
 "use client"
+import Script from'next/script'
 import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -15,6 +16,14 @@ export default function RootLayout({children}) {
 				<Header />
 				{children}
 				<Footer />
+				{/* <Script>
+				window.addEventListener('blur', {() => {
+				document.title = 'Come back! 🥺'
+			}})
+			window.addEventListener('focus', {() => {
+				document.title = 'Daniel Calderon'
+			}})
+				</Script> */}
 			</body>
 		</html>
 	)

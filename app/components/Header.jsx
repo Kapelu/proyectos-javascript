@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react'
+import menu from '../json/menu.json'
 import Link from 'next/link'
 import '../globals.css'
 import './header.css'
 
 export default function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
+	const item = menu[0];
 
 	useEffect(() => {
 		const handleClickOutsideMenu = (event) => {
@@ -16,15 +18,6 @@ export default function Header() {
 		}
 		document.addEventListener('click', handleClickOutsideMenu)
 	}, [])
-
-	const item = {
-		inicio: {name: 'Inicio', link: '#'},
-		acerca: {name: 'Acerca', link: '#acerca'},
-		servicios: {name: 'Servicios', link: '#servicios'},
-		portafolio: {name: 'Portafolio', link: '#portafolio'},
-		testimonio: {name: 'Testimonios', link: '#testimonios'},
-		contacto: {name: 'Contacto', link: '#contacto'},
-	}
 
 	return (
 		<header className='header'>

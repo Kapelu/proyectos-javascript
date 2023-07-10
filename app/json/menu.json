@@ -1,0 +1,28 @@
+[
+	{
+		"inicio": {
+			"name": "Inicio",
+			"link": "#"
+		},
+		"acerca": {
+			"name": "Acerca",
+			"link": "#acerca"
+		},
+		"servicios": {
+			"name": "Servicios",
+			"link": "#servicios"
+		},
+		"portafolio": {
+			"name": "Portafolio",
+			"link": "#portafolio"
+		},
+		"testimonio": {
+			"name": "Testimonios",
+			"link": "#testimonios"
+		},
+		"contacto": {
+			"name": "Contacto",
+			"link": "#contacto"
+		}
+	}
+]

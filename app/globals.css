@@ -13,7 +13,7 @@
   
   --gray-color: #ccc;
   --gray-light-color: #f3f3f3;
-  --gray-dark-color: #666;
+  --gray-dark-color: #66666666;
   
   --black-color: #000;
   --black-alpha-color: rgba(0, 0, 0, 0.4);
@@ -58,13 +58,14 @@ body {
   overflow-x: hidden;
   color: var(--text-color);
 
-  background-color: var(--gray-color);
+  /* background-color: var(--gray-color); */
 }
 
 a {
   color: var(--link-color);
   text-decoration: none;
   transition: all 0.75s ease-out;
+
 }
 
 a:hover {
@@ -129,7 +130,7 @@ p {
 .container{
   margin-left: auto;
   margin-right: auto;
-  min-width: 1200px;
+  max-width: 1200px;
 }
 
 @media screen and (min-width: 768px) {}

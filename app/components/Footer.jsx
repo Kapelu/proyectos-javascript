@@ -11,7 +11,7 @@ export default function Footer() {
 					target='_blank'
 					rel='noopener'
 				>
-					@Daniel Calderon
+					@Kapelu
 				</Link>
 			</small>
 		</footer>

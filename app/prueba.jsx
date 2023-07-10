@@ -1,35 +1,99 @@
-layaout.jsx 
-
-
-
-
-page.jsx
-
-import Inicio from './components/Inicio'
-import Acerca from './components/Acerca'
-import './globals.css'
-
-export default function Home() {
-	return (
-		<>
-			<section id='inicio' className='container home'>
-                <Inicio />
-            </section>
-			<section id="acerca" className="container about section  full-lg-screen">
-                <Acerca />
-            </section>
-			<section id='servicios' className='container'>
-                <h2>Servicios</h2>
-            </section>
-			<section id='portafolio' className='container'>
-                <h2>Portafolio</h2>
-            </section>
-			<section id='testimonios' className='container'>
-                <h2>Testimonios</h2>
-            </section>
-			<section id='contacto' className='container'>
-                <h2>Contacto</h2>
-            </section>
-		</>
-	)
-}
+const portafolioData = [
+	{
+		id: 'trabajo-challenge-javascript',
+		titulo: 'CHALLENGE JAVASCRIPT',
+		descripcion:
+			'Son preguntas de opciones múltiples, desde lo más básico a lo avanzado. Está echo en markdown, aunque la idea es pasarla pronto a html y css.',
+		imagen: 'http://placehold.it/32x32',
+		fecha: '05/10/2022',
+		tipo: 'MARKDOWN y HTML',
+		enlace: 'https://github.com/Kapelu/Challenge-JavaScript/',
+		repositorio: 'https://github.com/Kapelu/Challenge-JavaScript',
+	},
+	{
+		id: 'trabajo-challenge-react',
+		titulo: 'CHALLENGE REACT',
+		descripcion:
+			'Son algunas de las preguntas más frecuentes en las entrevistas técnicas de React. Desde lo más básico a lo avanzado.',
+		imagen: 'http://placehold.it/32x32',
+		fecha: '23/01/2023',
+		tipo: 'MARKDOWN y HTML',
+		enlace: 'https://github.com/Kapelu/Challenge-React/',
+		repositorio: 'https://github.com/Kapelu/Challenge-React',
+	},
+	{
+		id: 'trabajo-chrome-extension',
+		titulo: 'FIRST EXTENSION CHROME',
+		descripcion:
+			'Es un modelo de base para crear extensiones en Chrome. Usando solamente html, css y javascript.',
+		imagen: 'http://placehold.it/32x32',
+		fecha: '18/03/2023',
+		tipo: 'HTML, CSS y JAVASCRIPT',
+		enlace: 'https://github.com/Kapelu/primera-extension-chrome/',
+		repositorio: 'https://github.com/Kapelu/primera-extension-chrome',
+	},
+	{
+		id: 'trabajo-todo-list',
+		titulo: 'APP TODO LIST',
+		descripcion:
+			"Pequeña aplicación, que a diferencia de otras esta usa el 'localStorage' para mantener las tareas activas después de cerrar el navegador.",
+		imagen: 'http://placehold.it/32x32',
+		fecha: '31/03/2023',
+		tipo: 'HTML, CSS y JavaScript',
+		enlace: 'https://kapelu.github.io/app-todo-list/',
+		repositorio: 'https://github.com/Kapelu/app-todo-list',
+	},
+	{
+		id: 'trabajo-app-clima',
+		titulo: 'App Clima',
+		descripcion:
+			'App de clima que toma como referencia la ubicación de nuestro navegador, por lo que al consultarle, nos pedira activar ubicación.',
+		imagen: 'http://placehold.it/32x32',
+		fecha: '08/04/2023',
+		tipo: 'HTML, CSS y JavaScript',
+		enlace: 'https://kapelu.github.io/app-clima/',
+		repositorio: 'https://github.com/Kapelu/app-clima',
+	},
+	{
+		id: 'trabajo-app-calculadora',
+		titulo: 'App Calculadora',
+		descripcion:
+			'Sencilla calculadora con la particularidad de que solo usa una sola linea de JavaScript',
+		imagen: 'http://placehold.it/32x32',
+		fecha: '11/04/2023',
+		tipo: 'HTML, CSS y JavaScript',
+		enlace: 'https://kapelu.github.io/app-calculadora/',
+		repositorio: 'https://github.com/Kapelu/app-calculadora',
+	},
+	{
+		id: 'trabajo-app-notas',
+		titulo: 'App Notas',
+		descripcion:
+			'Aplicación de notas, que usa localStorage, para mantener las notas siempre cargadas, hasta que el usuario las borreo elimine la memoria del localStorage',
+		imagen: 'http://placehold.it/32x32',
+		fecha: '03/04/2023',
+		tipo: 'HTML, CSS y JavaScript',
+		enlace: 'https://kapelu.github.io/app-notas/',
+		repositorio: 'https://github.com/Kapelu/app-notas',
+	},
+	{
+		id: 'trabajo-app-pokemon',
+		titulo: 'App Pokémon',
+		descripcion: 'Aplicación de pokémon que muestra 100 pokémones y algunas de sus caracteristicas. Los datos son obtenidos desde la  API: https://pokeapi.co/',
+		imagen: 'http://placehold.it/32x32',
+		fecha: '05/05/2023',
+		tipo: 'HTML, CSS y JavaScript',
+		enlace: 'https://kapelu.github.io/app-pokemon/',
+		repositorio: 'https://github.com/Kapelu/app-pokemon',
+	},
+    {
+		id: 'cv-daniel-calderon',
+		titulo: 'CV Daniel Calderon',
+		descripcion: 'Primer portafolo tipo Landing Page. Realizado puramente con HTML, CSS y un poco de JavaScript.',
+		imagen: 'http://placehold.it/32x32',
+		fecha: '06/04/2023',
+		tipo: 'HTML, CSS y JavaScript',
+		enlace: 'https://danielcalderon.vercel.app/',
+		repositorio: 'https://github.com/Kapelu/Daniel-Calderon',
+	},
+]
