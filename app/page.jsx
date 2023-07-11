@@ -22,7 +22,7 @@ export default function Home() {
         <Servicios />
       </section>
 			<section id='portafolio' className='portfolio section'>
-      <Portafolio />
+      <Portafolio /><PortafolioModal />
       </section>
 			<section id='testimonios' className=''>
         <h2>Testimonios</h2>
