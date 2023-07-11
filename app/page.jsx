@@ -4,6 +4,7 @@ import Inicio from './components/Inicio'
 import Acerca from './components/Acerca'
 import Servicios from './components/Servicios'
 import Portafolio from './components/Portafolio'
+import PortafolioModal from './components/PortafolioModal'
 
 /* import './page.module.css' */
 import './globals.css'
@@ -21,7 +22,7 @@ export default function Home() {
         <Servicios />
       </section>
 			<section id='portafolio' className='portfolio section'>
-        <Portafolio />
+      <Portafolio />
       </section>
 			<section id='testimonios' className=''>
         <h2>Testimonios</h2>

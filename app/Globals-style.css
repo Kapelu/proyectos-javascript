@@ -257,7 +257,7 @@
 } */
 
 /* ********** Modal ********** */
-.modal {
+/* .modal {
   position: fixed;
   z-index: 999;
   top: 0;
@@ -293,7 +293,7 @@
   opacity: 1;
   pointer-events: auto;
 }
-
+ */
 /* ********** ProgressBar ********** */
 /* 
 progress {
