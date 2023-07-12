@@ -8,7 +8,7 @@ export default function PortafolioModal() {
 	return (
 		<>
 			{portafolio.map((item) => (
-				<article className='modal' id={`trabajo-${item.id}`} key={item.id}>
+				<article className='modal' id={`${item.selector}-${item.id}`} key={item.id}>
 					<div className='modal-content'>
 						<Link href='#cerrar' className='modal-close'>
 							<svg

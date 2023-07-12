@@ -30,7 +30,7 @@
 	fill: var(--first-color);
 }
 
-.modal[id|='trabajo']:target {
+.modal[id|='trabajo-']:target {
 	opacity: 1;
 	pointer-events: auto;
 }
