@@ -47,7 +47,7 @@ export default function Acerca() {
 			<article>
 				<img
 					className='avatar gray-scale'
-					width='850px'
+					width='auto'
 					src='./assets/perfil.png'
 					alt='Daniel Calderon'
 				/>

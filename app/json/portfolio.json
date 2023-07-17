@@ -58,5 +58,25 @@
 		"tipo": "HTML, CSS y JavaScript",
 		"enlace": "https://kapelu.github.io/app-todo-list/",
 		"repositorio": "https://github.com/Kapelu/app-todo-list"
+	},
+	{
+		"id": "trabajo-todo-list",
+		"titulo": "APP TODO LIST",
+		"descripcion": "Pequeña aplicación, que a diferencia de otras esta usa el 'localStorage' para mantener las tareas activas después de cerrar el navegador.",
+		"imagen": "/assets/portfolio/portfolio4-todo-list.png",
+		"fecha": "31/03/2023",
+		"tipo": "HTML, CSS y JavaScript",
+		"enlace": "https://kapelu.github.io/app-todo-list/",
+		"repositorio": "https://github.com/Kapelu/app-todo-list"
+	},
+	{
+		"id": "trabajo-todo-list",
+		"titulo": "APP TODO LIST",
+		"descripcion": "Pequeña aplicación, que a diferencia de otras esta usa el 'localStorage' para mantener las tareas activas después de cerrar el navegador.",
+		"imagen": "/assets/portfolio/portfolio4-todo-list.png",
+		"fecha": "31/03/2023",
+		"tipo": "HTML, CSS y JavaScript",
+		"enlace": "https://kapelu.github.io/app-todo-list/",
+		"repositorio": "https://github.com/Kapelu/app-todo-list"
 	}
 ]
