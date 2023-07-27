@@ -15,6 +15,7 @@ export default function Header() {
 				$btnMenu.firstElementChild.classList.remove('menu-none')
 				$btnMenu.lastElementChild.classList.add('menu-none')
 				setIsMenuOpen(false)
+				
 		}
 		document.addEventListener('click', handleClickOutsideMenu)
 	}, [])
