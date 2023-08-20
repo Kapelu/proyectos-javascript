@@ -50,7 +50,7 @@ export default function Header() {
 					}}
 				>
 					<svg
-						className='menu-hamburguer'
+						className='menu-hamburguer menu-btn'
 						xmlns='http://www.w3.org/2000/svg'
 						width='24'
 						height='24'
